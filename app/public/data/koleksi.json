@@ -1,4 +1,4 @@
-[{"id":"1","judul":"Quest Academy","kategori":"Edukasi","tahun":2025,"tautan":"https://belajar.arsene-cloud.my.id","teknologi":"Next.js"},
+[{"id":"1","judul":"Silent Voice","kategori":"Aksesbilitas","tahun":2026,"tautan":"https://github.com/GEMASTIK-2026/SilentVoice","teknologi":"React Native"},
 {"id":"2","judul":"Tabungan Bersama","kategori":"Keuangan","tahun":2025,"tautan":"https://saving-with-friends.vercel.app","teknologi":"React"},
 {"id":"3","judul":"Website SDN 3 Way Galih","kategori":"Sekolah","tahun":2026,"tautan":"https://sdn3-waygalih.pages.dev","teknologi":"HTML"},
 {"id":"4","judul":"Doeng Monitor","kategori":"Monitoring","tahun":2025,"tautan":"https://monitor.arsene-cloud.my.id","teknologi":"JavaScript"},
