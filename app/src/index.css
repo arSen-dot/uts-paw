@@ -1,16 +1,191 @@
 :root {
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-family: system-ui, sans-serif;
   line-height: 1.5;
-  color: #1f2328;
-  background: #f6f7f9;
+  color: #1a1a1a;
 }
 
 body {
   margin: 0;
 }
 
-main {
-  max-width: 960px;
+.container {
+  max-width: 900px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0.75rem 1rem;
+  background: #1a1a2e;
+  color: #fff;
+}
+
+.navbar .brand {
+  font-weight: 700;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: #cfd2ff;
+  text-decoration: none;
+}
+
+.navbar a.active {
+  color: #fff;
+  text-decoration: underline;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+form div {
+  margin-bottom: 0.75rem;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+input {
+  width: 100%;
+  max-width: 420px;
+  padding: 0.4rem;
+  box-sizing: border-box;
+}
+
+input[type='search'] {
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+[role='alert'] {
+  color: #b00020;
+  font-weight: 600;
+}
+
+dl div {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+dt {
+  font-weight: 700;
+  min-width: 100px;
+}
+
+dd {
+  margin: 0;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  color: #666;
+  border-top: 1px solid #ddd;
+  margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+  }
+
+  .container {
+    padding: 0.75rem;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  th,
+  td {
+    padding: 0.35rem;
+  }
+
+  input {
+    max-width: 100%;
+  }
+
+  dl div {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+/* Selektor id yang dipakai di tampilan. */
+#navigasi {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+#judul-koleksi {
+  margin-bottom: 0.5rem;
+}
+
+#kaki-halaman {
+  font-size: 0.9rem;
+}
+
+/* Selektor kelas tambahan yang dipakai di tampilan. */
+.tabel-koleksi {
+  width: 100%;
+}
+
+.form-tambah {
+  max-width: 480px;
+}
+
+.tombol-hapus {
+  background: #b00020;
+  color: #fff;
+  border: none;
+}
+
+/* Selektor pseudo yang dipakai di tampilan. */
+.navbar a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+input:focus,
+button:focus {
+  outline: 2px solid #1a1a2e;
+  outline-offset: 2px;
+}
+
+tbody tr:nth-child(even) {
+  background: #f5f5f5;
 }

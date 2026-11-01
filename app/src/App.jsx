@@ -1,36 +1,32 @@
-import { Route, Routes } from 'react-router-dom'
-import mahasiswa from '../mahasiswa.json'
-
-// Titik awal ujian. Baca soal lengkap di https://uts-paw.mhabibalgifari.web.id/soal
-// dan contoh setiap kode yang diminta di https://uts-paw.mhabibalgifari.web.id/contoh
-// Rute wajib: /, /koleksi, /koleksi/:id, /tambah, /statistik, /tentang, dan *.
-// Provider Context diletakkan di dalam komponen App ini.
-
-function Beranda() {
-  return (
-    <main>
-      <h1>Ujian Tengah Semester Pengembangan Aplikasi Web</h1>
-      <p>
-        {mahasiswa.nama || 'Nama belum diisi'} ({mahasiswa.nim || 'NIM belum diisi'})
-      </p>
-    </main>
-  )
-}
-
-function TidakDitemukan() {
-  return (
-    <main>
-      <h1>404</h1>
-      <p>Halaman tidak ditemukan.</p>
-    </main>
-  )
-}
+import { Navigate, Route, Routes } from 'react-router-dom'
+import Footer from './components/Footer.jsx'
+import Navbar from './components/Navbar.jsx'
+import { KoleksiProvider } from './context/KoleksiContext.jsx'
+import Detail from './pages/Detail.jsx'
+import Koleksi from './pages/Koleksi.jsx'
+import NotFound from './pages/NotFound.jsx'
+import Statistik from './pages/Statistik.jsx'
+import Tambah from './pages/Tambah.jsx'
+import Tentang from './pages/Tentang.jsx'
 
 export default function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Beranda />} />
-      <Route path="*" element={<TidakDitemukan />} />
-    </Routes>
+    <KoleksiProvider>
+      <header>
+        <Navbar />
+      </header>
+      <main className="container">
+        <Routes>
+          <Route path="/" element={<Navigate to="/koleksi" replace />} />
+          <Route path="/koleksi" element={<Koleksi />} />
+          <Route path="/tambah" element={<Tambah />} />
+          <Route path="/koleksi/:id" element={<Detail />} />
+          <Route path="/statistik" element={<Statistik />} />
+          <Route path="/tentang" element={<Tentang />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
+      <Footer />
+    </KoleksiProvider>
   )
 }
