@@ -1,10 +1,10 @@
-[
-  {
-    "id": "1",
-    "judul": "Contoh item pertama",
-    "kategori": "Contoh",
-    "fieldTema1": "ganti sesuai field tema",
-    "fieldTema2": 0,
-    "fieldTema3": "ganti sesuai field tema"
-  }
-]
+[{"id":"1","judul":"Quest Academy","kategori":"Edukasi","tahun":2025,"tautan":"https://belajar.arsene-cloud.my.id","teknologi":"Next.js"},
+{"id":"2","judul":"Tabungan Bersama","kategori":"Keuangan","tahun":2025,"tautan":"https://saving-with-friends.vercel.app","teknologi":"React"},
+{"id":"3","judul":"Website SDN 3 Way Galih","kategori":"Sekolah","tahun":2026,"tautan":"https://sdn3-waygalih.pages.dev","teknologi":"HTML"},
+{"id":"4","judul":"Doeng Monitor","kategori":"Monitoring","tahun":2025,"tautan":"https://monitor.arsene-cloud.my.id","teknologi":"JavaScript"},
+{"id":"5","judul":"Portfolio Pribadi","kategori":"Portofolio","tahun":2026,"tautan":"https://arsene-cloud.my.id","teknologi":"React"},
+{"id":"6","judul":"Quest Academy Cohort","kategori":"Edukasi","tahun":2026,"tautan":"https://belajar.antekashing.my.id","teknologi":"Next.js"},
+{"id":"7","judul":"BukuKu","kategori":"Perpustakaan","tahun":2026,"tautan":"https://arsene-cloud.my.id","teknologi":"React"},
+{"id":"8","judul":"Timeline Video Visualizer","kategori":"Visualisasi","tahun":2026,"tautan":"https://arsene-cloud.my.id","teknologi":"JavaScript"},
+{"id":"9","judul":"DalangFakta","kategori":"Media","tahun":2026,"tautan":"https://arsene-cloud.my.id","teknologi":"JavaScript"},
+{"id":"10","judul":"Pixel Art Game Assets","kategori":"Game","tahun":2025,"tautan":"https://arsene-cloud.my.id","teknologi":"Aseprite"}]
