@@ -39,4 +39,3 @@ Map + key: tampilkan daftar, tiap baris punya key unik.
 Conditional rendering: tampilan menyesuaikan kondisi.
 Controlled form: isi input disimpan di state, validasi sendiri.
 localStorage: data tersimpan di browser, tidak hilang saat refresh.
-```
